@@ -1,0 +1,5 @@
+1.Ansible nedir?
+2.XML nedir? Açılımı nedir?
+3.JSON nedir?
+4.YAML nedir?
+5.http, https, status kodların araştırılması (1 ile başlayanlar, 2 ile başlayanlar...)

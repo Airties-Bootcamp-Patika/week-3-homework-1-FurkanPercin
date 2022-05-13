@@ -1,0 +1,5 @@
+1.Kernel ile Shell farkı
+2.Docker portainer
+3.Cross origin
+4.Application server: Tomcat, Wildfly, Nginx
+5.CVCS - DVCS

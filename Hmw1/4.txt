@@ -1,0 +1,5 @@
+1.URL, URI
+2.DNS yapısı, Domain nedir? Host yapısı
+3.GNU nedir?
+4.Git
+5.CLİ, GUİ ve farkı

@@ -1,0 +1,5 @@
+1.Statik kod analizi: Sonarqube
+2.Kubernetes yapısı
+3.Orchestration yapısı
+4.npm nedir ve niçin kullanılır?
+5.Agile-Scrum nedir?

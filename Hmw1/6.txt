@@ -1,0 +1,7 @@
+1.İyi bir commit mesajı nasıl olmalıdır?
+2.FIFO ile LIFO sıralama şeklini araştırınız.
+3.git merge rebase farkı, rebase yapısı nedir?
+4.Sourcetree'yi inceleyiniz.
+5.Interpreter-Complier nedir? Aralarındaki farklar nelerdir?
+6.Sp engine
+7.Servlet
