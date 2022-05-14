@@ -1,5 +1,8 @@
 1.Bilgisayarda kaç port vardır?
+	Bilgisayarda 65536 adet port numarası mevcuttur.
 2.1024 altı olan portlar neden dış dünyaya açılmıyor? 1024 altı portlarin genel adı nedir? (well-known ports)
+	Bu portlar yaygun TCP/IP uygulamaları için rezerve edilmiştir. Bu portların kullanılması client uygulamaların diğer hostlarda karşılık gelen server uygumalarını kolayca bulmayı sağlar. 0-1023 arası portlardır.
+	25 portu SMTP, e-posta için kullanılır. 22 portu SSH, güvenli ağ bağlantıları oluşturan bir protokolden birisidir. 443 portu HTTPS, SSL(Secure Sockets Layer) bağlantısı ile güvenli bağlantı bu port üzerinden yapılır. 53 portu DNS için kullanılır.
 3.80 portu dışarıya 8585 açılmış neden?
 4.Nginx nedir?
 5.Devops nedir? Devops yapısını araştırınız. (sonsuzluk işaretli diagramdaki başlıkların araştırılması
