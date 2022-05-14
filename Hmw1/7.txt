@@ -5,7 +5,15 @@ komutu uygulanırsa datalar staging area'ya geçerek staging durumuna sahip olur
 2.conflict nedir? çözümü
 	Merge conflict, merge etmeye çalışılan iki branch aynı dosyanın aynı bölümünü değiştirdiğinde oluşur, Git hangi 
 sürümü kullanacağını bulamaz. Böyle bir durum meydana geldiğinde, çakışmaları manuel olarak çözülebilmesi için merge etmeden hemen 
-önce durur.
+önce durur. 
+	Git, etkilenen dosyaların içeriğini, çakışan içeriğin her iki tarafını da işaretleyen görsel göstergelerle düzenler.
+	<<<<<<< : Conflict işareti, conflict bu satırdan sonra başlar.
+	======= : Değişikliklerinizi diğer daldaki değişikliklerden ayırır.
+	>>>>>>> : Çakışan satırların sonu.
+	
+	git merge --abort ==> conflict olmadan önceki haline döndürür.
+
+
 
 3.merge ile rebase arasındaki fark nedir?
 	Merge tüm değişiklikleri olduğu gibi korur. Rebase ise daha sade, anlaşılabilir bir commit istenmesinde kullanılır.master'a
