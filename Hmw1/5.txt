@@ -1,5 +1,41 @@
 1.Kernel ile Shell farkı
+	Shell, kernel ile kullanıcı arassındaki arayüzdür. Bir CLI'dır. Hafıza yönetimini sağlayabilir.
+	Kernel ise işletim sisteminin çekirdeğidir. Çalışan uygulamalar ile donanımı arayüzler(RAM, CPU). Process yönetimi gerçekleştirir. Ana görevi
+kurulu olduğu bilgisayarın tüm kaynaklarını yönetmek ve bu kaynaklarla uygulamalar arasında köprü görevi oluşturmaktır.
+
 2.Docker portainer
+	Portainer, farklı Docker ortamlarınızı kolayca yönetmenize olanak tanıyan hafif bir management GUI'sidir. Portainer, tüm Docker 
+kaynaklarınızı (konteynerler, görüntüler, birimler, ağlar ve daha fazlası) yönetmenize olanak tanır.
 3.Cross origin
+	Bir rootta çalışan web uygulamasının farklı bir rootta yer alan web uygulamasına erişim izni kontrolünü sağlayan mekanizmadır. Web uygulaması,
+browser üzerinden farklı bir root'a (browser, domain, port) herhangi bir istek gönderirse cross-origin HTTP isteği oluşturmuş olur.
+
 4.Application server: Tomcat, Wildfly, Nginx
+	Uygulama sunucuları, uygulama verilerini depolayan veritabanı sunucuları ile istemcilerle iletişim kuran web sunucuları arasında fiziksel veya 
+sanal olarak bulunur. Uygulama sunucuları ve benzeri ara katman yazılımı, bir uygulamanın geliştirilmesini ve teslim edilmesini destekleyen işletim 
+sistemleridir. Application serverlar trafiği optimize eder ve güvenlik ekler.
+	Apache Tomcat:
+		Apache Tomcat, Java Servlet'lerini yürüten, JavaServer Sayfa kodunu içeren web sayfalarını oluşturan ve sunan ve Java Enterprise Edition
+ uygulamalarına hizmet eden açık kaynaklı bir uygulama sunucusudur.
+	WildFly:
+		WildFly, bir Java web uygulamasını çalıştırmak için gerekli tüm özellikleri sağlayan tam özellikli bir Java Enterprise Edition uygulama 
+sunucusudur.
+	Nginx:
+		Açık kaynaklı bir web sunucusudur. Yüksek trafiklii ve yoğun request alan sitelerde kullanılması uygun olan application serverdır. Temel 
+özellikleri;
+		-Reverse Proxy:
+			-Clienttan gelen istekleri server adına karşılar ve istemciye iletir. Dönen cevapları client'a atar.
+			-Serverların varlığını ve özelliklerini gizler.
+			-Client'ı web tabanlı saldırılara karşı koruyabilir.
+			-Web serverları üzerindeki yükü azaltır.
+		-Load Balancing:
+			-Server üzerindeki fazla yükleri diğer serverşara dağıtarak birden fazla makinede kısa sürede çözüm sağlar.
+		-SSL:
+			-Server ile alıcı arasındaki iletişimi şifreleme işlemi sağlar.
 5.CVCS - DVCS
+	CVCS(Centralized Verison Control Systems):
+		CVCS, sunucunun merkezi deposunun istemci makinelere en son kodu sağladığı en basit sürüm denetimi biçimidir. Yerel depo yok. 
+DVCS'ten yavaş çalışır. Her zaman internet bağlantısı gerektirir. Serverda meydana gelen hata bütün sürümleri yok eder.
+	DVCS(Distributed Verison Control Systems):
+		DVCS, tüm kod tabanının her geliştiricinin bilgisayarına yansıtıldığı bir sürüm denetimi biçimidir. Yerel depolar var. Kodun tüm geçmişi
+bulunur. Daha hızlı çalışır. Geliştiriciler, internet bağlantısı olmadan yerel bir depoyla çalışabilir. Ana sunucudaki bir arıza geliştirmeyi etkilemez.
