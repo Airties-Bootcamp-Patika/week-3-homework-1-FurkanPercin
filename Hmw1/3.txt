@@ -1,5 +1,50 @@
 1.Ansible nedir?
+	Yapılandırma yönetimi, uygulama dağıtımı, orchestration ve birçok IT süreçlerini otomatikleştiren açık kaynaklı otomasyon motorudur. Bir bilgisayar-
+dan birçok servera hükmedebildiğimiz aynı anda birçok serverda aynı komutu çalıştırabildiğimiz otomasyon tool'udur.
+
 2.XML nedir? Açılımı nedir?
+	Extensible Markup Language'in kısaltmasıdır. İsteğe bağlı verileri depolamak, iletmek ve yeniden oluşturmak için bir markup language ve dosya 
+biçimidir. Key-value yapısı vardır. Unstructed'dır.
+	root     ==> En baştaki etiket,
+	child    ==> bir alt dal,
+	subchild ==> child etiketinin içindekiler.
+
 3.JSON nedir?
+	JavaScript Object Notation'ın kısaltmasıdır. Dil bağımsız bir data formatıdır. Attribute-value çiftlerinden oluşan veya array gibi elementlerden
+oluşan dataları depolamak ve iletmek için kullanılan dosya ve data interchange formatıdır. Human readable text olarak geçmektedir.
+
 4.YAML nedir?
+	Yet Another Markup Language'ın kısaltmasıdır. Human readable data serialization dilidir. Key value yapısındadır. Verilerin depolandığı, iletildiği
+uygulamalarda ve config dosyalarından kullanılır.
+
 5.http, https, status kodların araştırılması (1 ile başlayanlar, 2 ile başlayanlar...)
+	HTTP(Hyper Text Transfer Protocol):
+		Bilginin sunucudan kullanıcıya nasıl ve ne şekilde aktarılacağını gösteren protokoldür. Client ile server arasındaki veri alışveriş kural-
+larını belirler.
+		Client'lar ve serverlar arasındaki iletişim, istekler ve yanıtlarla yapılır.:
+			1.Bir client (bir tarayıcı) web'e bir HTTP isteği gönderir,
+			2.Web sunucusu isteği alır,
+			3.Server, isteği işlemek için bir uygulama çalıştırır,
+			4.Server, tarayıcıya bir HTTP response'u döndürür,
+			5.Client yanıtı alır.
+	HTTPS(Hyper Text Transfer Protocol Secure):
+		HTTP'ye SSl sertifikası eklenerek oluşur. İnternet sitelerinin kurduğu bağlantıların şifrelenmesidir. Özellikle ödeme alan web siteleri için
+uygundur.
+	HTTP Status Codes:
+		Information Responses   ==> 100-199
+		Successful Responses    ==> 200-299
+		Redirection Messages    ==> 300-399
+		Client Error Responses  ==> 400-499
+		Server Error Responses  ==> 500-599 
+
+	HTTP Method | CRUD Operation
+	----------------------------
+	GET		| Read
+	POST		| Create
+	PATCH		| Update
+	DELETE	| Delete
+	PUT		| Update/Replaces
+	HEAD		| -
+	OPTIONS	| -
+
+
