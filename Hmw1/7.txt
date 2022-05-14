@@ -1,0 +1,13 @@
+1. git unstaging staging kavramları nedir?
+	Unstaging kavramı dataların henüz add yapılmadan önceki halidir. Datalarıntakip edilmediği anlamına gelir. Eğer "git add ." 
+komutu uygulanırsa datalar staging area'ya geçerek staging durumuna sahip olur.
+
+2.conflict nedir? çözümü
+	Merge conflict, merge etmeye çalışılan iki branch aynı dosyanın aynı bölümünü değiştirdiğinde oluşur, Git hangi 
+sürümü kullanacağını bulamaz. Böyle bir durum meydana geldiğinde, çakışmaları manuel olarak çözülebilmesi için merge etmeden hemen 
+önce durur.
+
+3.merge ile rebase arasındaki fark nedir?
+	Merge tüm değişiklikleri olduğu gibi korur. Rebase ise daha sade, anlaşılabilir bir commit istenmesinde kullanılır.master'a
+bir branch'i rebase ettiğinizde , branch deki commitlerinizi tek tek alıp master ın sonuna ekleyecektir. Sonuç olarak rebase 
+sonucunda tek bir history oluşturur çünkü tamamlanan işi bir branch ten diğerine aktarır. Bu süreçte istenmeyen history ortadan kalkar.
