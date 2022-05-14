@@ -8,7 +8,7 @@ sürümü kullanacağını bulamaz. Böyle bir durum meydana geldiğinde, çakı
 önce durur. 
 	Git, etkilenen dosyaların içeriğini, çakışan içeriğin her iki tarafını da işaretleyen görsel göstergelerle düzenler.
 	<<<<<<< : Conflict işareti, conflict bu satırdan sonra başlar.
-	======= : Değişikliklerinizi diğer daldaki değişikliklerden ayırır.
+	======= : Değişikliklerinizi diğer branchteki değişikliklerden ayırır.
 	>>>>>>> : Çakışan satırların sonu.
 	
 	git merge --abort ==> conflict olmadan önceki haline döndürür.
@@ -19,3 +19,6 @@ sürümü kullanacağını bulamaz. Böyle bir durum meydana geldiğinde, çakı
 	Merge tüm değişiklikleri olduğu gibi korur. Rebase ise daha sade, anlaşılabilir bir commit istenmesinde kullanılır.master'a
 bir branch'i rebase ettiğinizde , branch deki commitlerinizi tek tek alıp master ın sonuna ekleyecektir. Sonuç olarak rebase 
 sonucunda tek bir history oluşturur çünkü tamamlanan işi bir branch ten diğerine aktarır. Bu süreçte istenmeyen history ortadan kalkar.
+
+
+7. chapter GITHUB reposu url'sidir ==> https://github.com/FurkanPercin/git_code
