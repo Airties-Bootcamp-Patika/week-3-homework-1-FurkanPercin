@@ -1,7 +1,41 @@
 1.İyi bir commit mesajı nasıl olmalıdır?
+	Yapılan commit'in türü belirlenmelidir(test, fix, refactor vb.). Commit edilen kodun çalıştığından emin olunmalıdır. Commit edilen kod atomik ve
+modüler bir yapıda olmalıdır. Commit mesajı açık ve net olmalıdır. Çok kısa veya uzun commitler atılmamalıdır.
+
 2.FIFO ile LIFO sıralama şeklini araştırınız.
+	FIFO(First In First Out):
+		Önce depolanan ürünlerin önce alınması gerektiği anlamına gelir.
+	LIFO(Last In First Out):
+		Son depolanan ürünlerin önce alınması gerektiği anlamına gelir.
+
 3.git merge rebase farkı, rebase yapısı nedir?
+	Merge tüm değişiklikleri olduğu gibi korur. Rebase ise daha sade, anlaşılabilir bir commit istenmesinde kullanılır.master a bir branch i rebase 
+ettiğinizde , branch deki commitlerinizi tek tek alıp master ın sonuna ekleyecektir. Sonuç olarak rebase sonucunda tek bir history oluşturur 
+çünkü tamamlanan işi bir branch ten diğerine aktarır. Bu süreçte istenmeyen history ortadan kalkar.
+	
+	$ git rebase secondBranch ==> örnek command
+
 4.Sourcetree'yi inceleyiniz.
+	Sourcetree bug tracking aracı  ve kullanımı kolay bir Git client'ıdır.GitHub gibi, çok çeşitli özellikler sunar ve repolar üzerinde daha fazla 
+kontrol sağlar.
+
 5.Interpreter-Complier nedir? Aralarındaki farklar nelerdir?
+	Yüksek seviyeli bir dil ile yazılmış kod parçasını (JavaScript veya Java gibi) bilgisayarın veya virtual machine gibi programların direkt
+olarak çalıştırılabildiği düşük seviyeli kod parçasına çeviren (Assembly gibi) bir programdır.
+	# Compiler bir programı bütün olarak alır ve çevirirken; Interpreter programı satır satır çevirir.
+	# Compiler, ara kod veya hedef kodu oluşturur fakat Interpreter herhangi bir ara kod oluşturmaz. Bundan dolayı Compiler, kodun oluşturulması için 
+daha fazla memory gerektirir.
+	# Compiler’da, bir hata oluştuduğunda, çeviri işlemi durur ve hata giderildikten sonra bütün program yeniden çeviri işlemine tabii tutulur. 
+Interpreter, bunun tam aksine olarak, eğer bir hata meydana geldiğinde, o anki çeviriyi engeller ve hata giderildiğine çeviriyi kaldığı yerden devam 
+ettirir. Bu yüzden debug işlemi daha kolaydır.
+	# Compiler’da, Interpreter’e kıyasla hata bulma daha zordur.
+	# Compiler, C, C++, C#, Scala, TypeScript gibi dillerde kullanılırken, Interpreter PHP, Perl, Ruby, Python gibi dillerde çalıştırılır.
+
+		
+
 6.Sp engine
+	Bulamadım.
 7.Servlet
+	Java EE içerisinde yer alan Servlet server-client tabanlı uygulamaların haberleşmesini yönetmek için kullanılan sınıf,arayüz ve paket topluluğudur.
+Servlet sunucuya bir istek geldiğinde sırayla çalışacak metotları belirtir. Bu metotlar Servlet yaşam döngüsü olarakta adlandırılır.
+	Servlet’in istemciye gönderilmesi için derlenmesine ihtiyaç duyulur. Bu derleme işlemi Servlet Container olarak adlandırılan Tomcat, Jetty gibi çeşitli uygulamalar tarafından yapılır.
