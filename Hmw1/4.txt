@@ -1,5 +1,33 @@
 1.URL, URI
+	URL(Uniform Resource Locator):
+		İnternet aracılığı ile erişilebilecek kaynakların konumu URL ile ifade edilir. URL teknik olarak URI'nin başını oluşturur. URL'nin ardından
+URN (Uniform Resource Name) gelir.
+		Bir kaynağın nerede olduğunu ve ona nasıl ulaşılacağını belireyen URL (http,ftp) gibi protokolleri barındırabilir.
+		URL konumu nitelerken, URN konumdaki kişinin adına benzer.
+	URI (Uniform Resource Identifier):
+		Kaynağa tam olarak identifier ile işaret eden ve bu işaretleme için standart bir formata sahip karakter dizgisidir. URL kapsamında tutulan
+alt tanımlardır. URI, URL ve URN olmak üzere 2 kapsama sahiptir.
+
 2.DNS yapısı, Domain nedir? Host yapısı
+	Human readable domain isimlerini alarak makinenin okuyabileceği IP adresine çevirir. Web site isimlerinin IP adreslerine çevirerek son kullanıcının
+browser'a bir domain yazdığında hangi sunucuya ulaşacağına karar verir. Domain ise bir uygulamasının internetteki adı ve adresidir.Hosting web sitesinin
+düzgün şekilde çalışabilmesi için gerekli dosyaların ve verilerin depolandığı bir sunucu alanıdır.
+
 3.GNU nedir?
+	GNU; çekirdeği, sistem araçlarını, açıcılarını, kütüphanelerini ve son kullanıcı yazılımlarını içerenbir işletim sistemidir. Linux, GNU lisansı 
+altında özgürce dağıtılıp değiştirilebilmektedir.
+
 4.Git
+	Git, bilgisayar dosyalarındaki değişiklikleri izlemek için kullanılan bir sürüm kontrol sistemidir. Genellikle yazılım geliştirmede kaynak kod 
+yönetimi için kullanılır.
+	-Kaynak koddaki değişiklikleri izlemek için kullanılır,
+	-Dağıtılmış sürüm kontrol aracı, kaynak kodu yönetimi için kullanılır,
+	-Birden fazla geliştiricinin birlikte çalışmasına izin verir.
+
 5.CLİ, GUİ ve farkı
+	GUI(Graphical User Interface):
+		Kullanıcıların grafik simgeler ve görsel göstergeler aracılığıyla elektronik cihazlarla etkileşim kurmasını sağlayan bir tür kullanıcı 
+arabirimidir.
+	CLI(Command Line Interface):
+		Kullanıcının, görevleri gerçekleştirmek için ardışık metin satırları veya komut satırları şeklinde komutlar vermesi için bir arayüz.
+	CLI, GUI'den daha hızlıdır. GUI'nin görünüşü değiştirilebilir. GUI, CLI'dan çok daha fazla hafızaya ihtiyaç duyar.
