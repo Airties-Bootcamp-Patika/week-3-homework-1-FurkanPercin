@@ -1,5 +1,28 @@
 1.Statik kod analizi: Sonarqube
+	Statik kod analizi kaynak kodun (run durumunda değil iken) kalite, güvenlik ve güvenilirlik açısından analiz edilen yazılım doğrulama metodudur. 
+	Dinamik kod analizi ise yazılımın çalıştırılarak, run time esnasında oluşabilecek hataların tespiti hesaplanır.
+	-Sonarqube:
+		Statik kod analizi yapan açık kaynak bir platformdur. Hatalar, güvenlik açıkları, kod tekrarları hakkından ayrıntılı rapor sağlar.
+
 2.Kubernetes yapısı
+	Kubernetes, Google platformunda geliştirilen bir kapsayıcı yönetim sistemidir. Kubernetes, hem bildirime dayalı yapılandırmayı hem de otomasyonu 
+kolaylaştıran, kapsayıcılı iş yüklerini ve hizmetleri yönetmek için açık kaynaklı bir platformdur.
+
 3.Orchestration yapısı
+	Container'ların dağıtımını, yönetimini, ölçeklendirilmesini ve ağ oluşturmasını otomatikleştirme ve zamanlama işlemleridir. Yüzlerce veya binlerce
+container'ı bir arada yönetmek için kullanılan temel yazılımlardır. Docker Swarm ve Kubernetes örnekleridir.
+
 4.npm nedir ve niçin kullanılır?
+	Node Package Manager'in kısaltmasıdır. JavaScript platformu için paket yöneticisidir. Paket kurulumuna, sürüm yönetimine ve dependency yönetimine 
+yardımcı olan repo ile etkileşim için bir command line programıdır.
+
 5.Agile-Scrum nedir?
+	Agile:
+		-Proje yönetimi ve yazılım geliştirmeye yönelik bir yaklaşımdır. Projeyi birkaç aşamaya bölerek yönetmenin yoludur. Gereksinimler, planlar 
+ve sonuçlar değerlendirilir, böylece ekiplerin değişime hızlı bir şekilde yanıt vermek için doğal bir mekanizması olur. Sürekli işbirliğini ve her 
+aşamada sürekli iyileştirmeyi içerir.
+	Scrum:
+		Scrum, bir projeyi kolaylaştırmak için kullanılan özel bir Agile metodolojidir. Scrum, daha kısa sprintlere ve daha küçük çıktılara 
+bölünürken, Agile'da her şey projenin sonunda teslim edilir.
+	Sprint:
+		Bir projenin belirli bir aşaması için ayrılan süredir. Sprintlerin süresi dolduğunda proje tamamlanmış sayılır.
