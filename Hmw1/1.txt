@@ -1,8 +1,39 @@
 1.Bilgisayarda kaç port vardır?
 	Bilgisayarda 65536 adet port numarası mevcuttur.
+
 2.1024 altı olan portlar neden dış dünyaya açılmıyor? 1024 altı portlarin genel adı nedir? (well-known ports)
-	Bu portlar yaygun TCP/IP uygulamaları için rezerve edilmiştir. Bu portların kullanılması client uygulamaların diğer hostlarda karşılık gelen server uygumalarını kolayca bulmayı sağlar. 0-1023 arası portlardır.
-	25 portu SMTP, e-posta için kullanılır. 22 portu SSH, güvenli ağ bağlantıları oluşturan bir protokolden birisidir. 443 portu HTTPS, SSL(Secure Sockets Layer) bağlantısı ile güvenli bağlantı bu port üzerinden yapılır. 53 portu DNS için kullanılır.
+	Bu portlar yaygun TCP/IP uygulamaları için rezerve edilmiştir. Bu portların kullanılması client uygulamaların diğer hostlarda karşılık gelen server 
+uygumalarını kolayca bulmayı sağlar. 0-1023 arası portlardır.
+	25 portu SMTP, e-posta için kullanılır. 22 portu SSH, güvenli ağ bağlantıları oluşturan bir protokolden birisidir. 443 portu HTTPS, SSL(Secure 
+Sockets Layer) bağlantısı ile güvenli bağlantı bu port üzerinden yapılır. 53 portu DNS için kullanılır. 80 portu üzerinden ise HTTP çalışır.
+
 3.80 portu dışarıya 8585 açılmış neden?
+	HTTP istemcileri genel olarak 80 portu üzerinden çalışır. Bir internet sitesine girmek için PC 80 portu üzerinden istek gönderir sonra serverlarda
+80 portu üzerinden cevap verir. Bu port üzerinden web sunucuya erişilir. 
+	Port yönlendirme IP adresini koruyarak ağa ekstra bir güvenlik katmanı ekler. Ek olarak istenmeyen trafiği ağlardan uzak tutmak için en etkili 
+araçtır.
+
 4.Nginx nedir?
+	Açık kaynaklı bir web sunucusudur. Yüksek trafiklii ve yoğun request alan sitelerde kullanılması uygun olan application serverdır. Temel özellikleri;
+-Reverse Proxy:
+	-Clienttan gelen istekleri server adına karşılar ve istemciye iletir. Dönen cevapları client'a atar.
+	-Serverların varlığını ve özelliklerini gizler.
+	-Client'ı web tabanlı saldırılara karşı koruyabilir.
+	-Web serverları üzerindeki yükü azaltır.
+-Load Balancing:
+	-Server üzerindeki fazla yükleri diğer serverşara dağıtarak birden fazla makinede kısa sürede çözüm sağlar.
+-SSL:
+	-Server ile alıcı arasındaki iletişimi şifreleme işlemi sağlar.
+
 5.Devops nedir? Devops yapısını araştırınız. (sonsuzluk işaretli diagramdaki başlıkların araştırılması
+	1. Plan: İş gereksinimleri belirlenir ve kullanıcı feedbackleri alınır. Yol haritası çıkarılarak iş değeri en üst düzeye çıkarılmaya ve istenen
+ürün teslim edilmeye çalışılır.
+	2. Code: Kodu geliştirme aşamasıdır. Developer ekipleri, süreci kolaylaştırmak için Git gibi araçlar kullanır bu da güvenlik açıklarından ve 
+kötü kodlama uygulamalarını azaltır.
+	3. Build: Developerlar taskları bitince commit yaparlar. Maven ve Gradle gibi build uygulamaları kullanırlar.
+	4. Test: Build hazır hale gelince, test ortamında gerekli testler yapılır. Security test, performance test, integration test vb.
+	5. Release: Build production ortamına deplot edilmeye hazırdır. Tüm testler bittikten sonra yayın planlanır ve production ortamına deploy edilir.
+	6. Deploy: Infastructure as Code ile production ortamı build edilir. Farklı araçlarla build release edilir.
+	7. Operate: Canlıya alınan ürünün serverına Chef gibi araçlarla bakım yapılır ve yapılandırılır.
+	8. Monitor: Uygulama performansından vb. toplanan veriler izlenir. Tüm ortamın izlenmesi, ekiplerin geliştirme ve operasyon performansı 
+geliştirilmeye çalışılır.
