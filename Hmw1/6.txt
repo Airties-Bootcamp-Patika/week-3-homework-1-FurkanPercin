@@ -31,8 +31,6 @@ ettirir. Bu yüzden debug işlemi daha kolaydır.
 	# Compiler’da, Interpreter’e kıyasla hata bulma daha zordur.
 	# Compiler, C, C++, C#, Scala, TypeScript gibi dillerde kullanılırken, Interpreter PHP, Perl, Ruby, Python gibi dillerde çalıştırılır.
 
-		
-
 6.Sp engine
 	Bulamadım.
 7.Servlet
